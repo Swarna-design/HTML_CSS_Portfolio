@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Developer Portfolio</title>
+    <style>
+        body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: #222;
+    color: #fff;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(to bottom right, #0066ff, #00cc99);
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+.hero button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.hero .hire-btn {
+    background: #0066ff;
+    color: #fff;
+}
+
+.hero .portfolio-btn {
+    background: #fff;
+    color: #0066ff;
+}
+
+section {
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.services, .projects, .about {
+    background: #f9f9f9;
+}
+
+.services h2, .projects h2, .about h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.services .service {
+    display: inline-block;
+    width: 30%;
+    margin: 15px;
+}
+
+.services .service img {
+    width: 50px;
+}
+
+.services .service p {
+    margin-top: 10px;
+}
+
+.projects .project {
+    display: inline-block;
+    width: 30%;
+    margin: 15px;
+}
+
+.projects .project img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+footer {
+    background: #222;
+    color: #fff;
+    padding: 20px 40px;
+    text-align: center;
+}
+
+footer a {
+    color: #00cc99;
+    text-decoration: none;
+}
+
+/* Animations */
+.hero button {
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.hero button:hover {
+    transform: scale(1.1);
+    background-color: #004bb5;
+}
+
+.project img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+/* Contact Form */
+.contact {
+    background: #fff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact form input, .contact form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact form button {
+    padding: 10px 20px;
+    border: none;
+    background: #0066ff;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact form button:hover {
+    background: #004bb5;
+}
+    </style>
+    
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+        <nav>
+            <a href="#hero">Home</a>
+            <a href="#services">Services</a>
+            <a href="#projects">Work</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="contact" id="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Connect with me: <a href="mailto:yourname@example.com">yourname@example.com</a></p>
+        <p>© 2025 [Your Name]. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
